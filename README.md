@@ -1,4 +1,4 @@
-# koki_slib
+# kokikapoor_dailytimedschedule
 
 ## Function
 The function of this library is to create a routine/daily homework schedule for the user with specific time periods allotted for certain subjects based on class difficulty and time for breaks, naps, and procrastination as well. 
