@@ -13,7 +13,7 @@ The user will input:
 * List of Homework assignments due at midnight (daily input)
 * List of homework assignments due before class the next day (daily input) 
 
-The program will then create a color-coordinated schedule for the day with the information the user provided with appropriate time slots for activities. 
+The program will then create a color-coordinated schedule for the day with the information the user provided with appropriate time slots for activities.  
 
 ## Features to Create:
 ## Progress on Features: 
