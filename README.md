@@ -1,17 +1,21 @@
-# kokikapoor_dailytimedschedule
+# Daily Timed Schedule
 
 ## Function
 The function of this library is to create a routine/daily homework schedule for the user with specific time periods allotted for certain subjects based on class difficulty and time for breaks, naps, and procrastination as well. 
 
 The user will input: 
-* Personal level of Difficulty of each class that term (select from below options) 
+* Each class's level of difficulty (select from below options) 
   * Easy but time-consuming 
   * Easy and quick 
   * Medium
   * Hard, tedious, and time-consuming 
   * Hard material, quick work 
-* List of Homework assignments due at midnight (daily input)
-* List of homework assignments due before class the next day (daily input) 
+* The type of assignment for that class
+  * Homework
+  * Graded Assessment
+  * Paper or Project
+* List of assignments due at midnight (daily input)
+* List of assignments due before class the next day (daily input) 
 
 The program will then create a color-coordinated schedule for the day with the information the user provided with appropriate time slots for activities.  
 
