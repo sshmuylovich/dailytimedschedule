@@ -15,10 +15,10 @@ The user will input:
 
 The program will then create a color-coordinated schedule for the day with the information the user provided with appropriate time slots for activities. 
 
-Features to Create:
-Progress on Features: 
+## Features to Create:
+## Progress on Features: 
 
-Recommended Help:
+## Recommended Help:
 1) Ideas to improve the correlation between class difficulty and time required
 2) Ways to reduce the time the user spends inputting data everyday (auto-saving previous answers?)
 3) Ways to maintain organization of classes and files in the library 
