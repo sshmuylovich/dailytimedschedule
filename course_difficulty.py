@@ -36,5 +36,23 @@ def set_courses_and_difficulties():
 
     print(f'\nYour course list:\n{list_courses}\nTheir corresponding difficulties:\n{list_difficulties}')
 
+
+def coursecheck():
+    #checks that the courses the user entered are in line with what they want 
+
+    check = input("Please check that these are the courses you're taking")
+    if check.lower() == 'yes':
+        print(f'\nYay! You are ready to move on.')
+    elif check.lower() == 'no':
+        set_courses_and_difficulties()
+    else: 
+        print(f'\nError. Please retry.')
+        coursecheck()
+
+coursecheck()
+
 if __name__ == "__main__":
     set_courses_and_difficulties()
+
+
+
