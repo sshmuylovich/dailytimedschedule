@@ -43,9 +43,9 @@ def coursecheck():
     #checks that the courses the user entered are in line with what they want 
 
     check = input("Please check that these are the courses you're taking")
-    if check.lower() == 'yes':
+    if check.lower() in ['yes', 'y']:
         print(f'\nYay! You are ready to move on.')
-    elif check.lower() == 'no':
+     elif check.lower() in ['no', 'n']:
         set_courses_and_difficulties()
     else: 
         print(f'\nError. Please retry.')
