@@ -14,6 +14,14 @@ def set_courses_and_difficulties():
     
     format_courses = get_courses()
 
+    value_t = input("\nPlease enter the amount of time (between 1 and 6 hours) that you spend completing work for each class every day.\n",
+   "The hours are as following:\n1 = between 1 and 1.7 hours\n2 = between 1.7 and 2.7 hours\n3 = between 2.7 and 3.7 hours\n4 = between 3.7 and 4.7 hours\n",
+   "5 = between 4.7 and 6 hours\n\nReminder, your courses are:", format_courses)
+  
+   def get_timetaken():
+       timetaken = value_t.strip()
+       return timetaken
+
     value_d = input('\nPlease enter the difficulty of each course in the same order with spaces in between each ranking.\n' +
     'The levels of difficulty are as following:\n' +
     '1 = Easy and quick\n' + '2 = Easy but time-consuming\n' + '3 = Medium\n' + '4 = Hard material, quick work'
@@ -28,6 +36,10 @@ def set_courses_and_difficulties():
         return s.split(" ") 
 
     list_courses = string_to_array(get_courses())
+
+     
+   list_timetaken = string_to_array(get_timetaken())
+
 
     list_difficulties = string_to_array(get_difficulties())
 
