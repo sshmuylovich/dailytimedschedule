@@ -30,9 +30,11 @@ def set_courses_and_difficulties():
     list_courses = string_to_array(get_courses())
 
     list_difficulties = string_to_array(get_difficulties())
+
+    # MAKE A JOINT LIST HERE 
     
     num_courses = len(list_courses)
-    # interger that represents the length of the courses array, isn't used as of now but is here in case you need it later
+    # integer that represents the length of the courses array, isn't used as of now but is here in case you need it later
 
     print(f'\nYour course list:\n{list_courses}\nTheir corresponding difficulties:\n{list_difficulties}')
 
@@ -41,9 +43,9 @@ def coursecheck():
     #checks that the courses the user entered are in line with what they want 
 
     check = input("Please check that these are the courses you're taking")
-    if check.lower() == 'yes':
+    if check.lower() in ['yes', 'y']:
         print(f'\nYay! You are ready to move on.')
-    elif check.lower() == 'no':
+     elif check.lower() in ['no', 'n']:
         set_courses_and_difficulties()
     else: 
         print(f'\nError. Please retry.')
@@ -55,4 +57,13 @@ if __name__ == "__main__":
     set_courses_and_difficulties()
 
 
-
+# A refined way to obtain the "difficulty of an assignment in a numerical form
+    # The course difficulty can weigh heavier and then the assignment diffculty can be added
+def get_difficulty_index()
+   # Through a joint list (see line 34)
+   # Can use the dictionary feature in python to develop the joint list
+            
+   # make the course difficulty weighed more than the homework efficiency        
+    float index = (course difficulty * 2) + homework difficulty
+   
+    return index
