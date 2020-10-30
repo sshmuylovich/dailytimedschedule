@@ -1,3 +1,8 @@
+# Koki Kapoor
+# CSC 630
+# Course Difficulty.py file 
+
+
 # have each homework assignment be ranked based on difficulty of the course and on difficulty of the assignment itself
 # list_of_courses_and_difficulty only takes into consideration the difficulty of the course, not the assignment
 
@@ -6,24 +11,27 @@ from array import *
     
 
 
-# dictionaries mapping difficulty/efficiency levels to their descriptions
-difficulty_desc = {
+# dictionaries mapping difficulty level to their assigned descriptions 
+difficulty_levels = {
     1:'Easy and quick',
     2:'Easy but time-consuming',
     3:'Medium',
     4:'Hard material, quick work',
     5:'Hard, tedious, and time-consuming'
 }
-timetaken_desc = {
-    1:'1-1.7 hours',
-    2:'1.7-2.7 hours',
-    3:'2.7-3.7 hours',
-    4:'3.7-4.7 hours',
-    5:'4.7-6 hours'
+
+#dictionary mapping efficency and time taken levels to their descriptions
+timetaken_levels = {
+    1:'1-1.9 hours',
+    2:'1.9-2.9 hours',
+    3:'2.9-3.9 hours',
+    4:'3.9-4.9 hours',
+    5:'4.9-6 hours'
 }
 
 
 def set_courses_and_difficulties():
+# user input of course names
     value_c = input("Please enter the names of all your courses with spaces in between each course name\n")
 
     def get_courses():
@@ -33,16 +41,15 @@ def set_courses_and_difficulties():
     
     format_courses = get_courses()
 
-    value_t = input(
-        "\nPlease enter the amount of time (between 1 and 6 hours) that you spend completing work for each class every day.\n"
-        "The hours are as following:\n"+
+    value_time = input("Please enter the amount of time (between 1 and 6 hours) that you spend completing work for each class every day.\n"
+        "The hours are as following:\n"
         "\n".join([f'Level {level}: {timetaken_desc[level]}' for level in range(1,6)])+
         f"\n\nReminder, your courses are: {format_courses}\n"
     )
   
 
 
-    value_d = input('\nPlease enter the difficulty of each course in the same order with spaces in between each ranking.\n' +
+    value_diff = input('\nPlease enter the difficulty of each course in the same order with spaces in between each ranking.\n' +
     'The levels of difficulty are as following:\n' +
     '\n'.join([f'Level {level}: {difficulty_desc[level]}' for level in range(1,6)])+
     f'\n\nReminder, your courses are: {format_courses}\n')
